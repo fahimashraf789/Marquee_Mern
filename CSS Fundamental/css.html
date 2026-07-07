@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Intro to CSS</title>
+    <!-- Internal CSS -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Yuyu&display=swap');
+        *{
+            background-color: aqua;
+            font-family: "Yuyu", sans-serif;
+        }
+        /* Internal CSS rules go here */
+        
+        ul
+        {
+            list-style-type: square;
+            color: blue;
+        }
+        /* class Selector : .classname(.formatting) */
+        .formatting{
+            background-color: aqua;
+            font-family:  cursive;
+        }
+        /* ID selector : #id */
+        #heading {
+            color: #752b3d;
+        }
+     /* group selector */
+        /* el1,el2,e3,#id,.formatting{
+
+        } */
+         /* Descendent */
+
+     /* child selector */
+     div > p{ 
+        color: #f779ed;
+        background-color: black;
+     }
+     selection > p{
+        color: crimson;
+        background-color: chartreuse;
+     }
+
+    </style>
+
+</head>
+<body>
+    <!-- Inline CSS: opening tag of an element -->
+    <h3 id="heading">Types of css :</h3>
+    <ul class="formatting">
+        <li>Inline CSS</li>
+        <li style="background-color: brown;">Internal CSS</li>
+        <li>External CSS</li>
+    </ul>
+    <a 
+    style="background-color: rgb(208, 29, 41); " href="css.html">Click here
+</a>
+    <section>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit possimus ipsa numquam nesciunt adipisci architecto iusto ullam, culpa quidem nemo alias voluptates excepturi officia consequuntur commodi eaque nisi fuga iste!
+    </p>
+</div>
+   <div> 
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis quos voluptatem totam quis dolor, culpa fugiat hic aliquid odit blanditiis possimus nostrum! Et ipsum iusto itaque? Dolorem accusamus possimus exercitationem.
+
+    </p>
+</div>
+</section>
+<form action="">
+    <label for="name">username:</label>
+    <input background-color="red" type="text" name = "username" id="name" placeholder="Enter Your Name" />
+</form>
+    <label for="password">Password</label>
+    <input type="text" name = "username" id="name" placeholder="Enter Your Password" />
+   
+    <input type="text" name="username" id="name" placeholder="Click">
+</form>
+</body>
+</html>
